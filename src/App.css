@@ -14,4 +14,16 @@
   color: white;
 }
 
+.logos {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--var-accent-light);
+  padding: 2rem
+}
+
+img {
+  max-width: 100%;
+  width: 100px;
+}
+
 
