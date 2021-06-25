@@ -1,19 +1,20 @@
 body {
-    background-color: #5E2B97;
+    background-color: #5E2B97 !important;
+    font-family: 'Pacifico', cursive !important;
 }
 
 a {
-  color: pink;
+  color: pink !important;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:hover{
-  color: palevioletred;
+  color: palevioletred !important;
 }
 
 footer{
   text-align: center;
-  color: white;
+  color: white !important;
 }
 
