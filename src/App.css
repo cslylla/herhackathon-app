@@ -4,12 +4,7 @@
 
 
 
-@media (prefers-reduced-motion: no-preference) {
-
-}
-
 .App-header {
-  background-color: #5E2B97;
   min-height: 100vh;
   display: flex;
   flex-direction: column;

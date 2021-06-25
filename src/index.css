@@ -1,2 +1,19 @@
+body {
+    background-color: #5E2B97;
+}
 
+a {
+  color: pink;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover{
+  color: palevioletred;
+}
+
+footer{
+  text-align: center;
+  color: white;
+}
 
