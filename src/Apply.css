@@ -1,14 +1,8 @@
 :root {
-  --var-bg-color1: #ffebcd;
-  --var-bg-color2: #eae1fc;
   --var-accent1: #ffbd59;
   --var-accent2: #ff66c4;
   --var-accent3: #5e17eb;
   --var-accent4: #ba9cf6;
-}
-
-body {
-  background-color: var(--var-accent1) !important;
 }
 
 footer a {
@@ -17,15 +11,64 @@ footer a {
   text-decoration: none;
   color: black !important;
 }
+.Apply {
+  text-align: center;
+}
 
-footer a:hover {
+.Apply footer a:hover {
   color: var(--var-accent2) !important;
 }
 
-footer {
+.Appl footer {
   font-family: "Heebo", sans-serif !important;
-  text-align: center;
   color: black !important;
   background-color: var(--var-accent-light);
   padding: 2rem;
+}
+
+.Apply h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 8rem;
+  color: var(--var-accent3);
+  font-size: 5rem;
+}
+
+.Apply h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--var-accent4) !important;
+}
+
+form {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  font-family: "Heebo", sans-serif !important;
+  font-weight: bold;
+  text-align: left;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: var(--var-accent3);
+  color: var(--var-accent2);
+  padding: 1rem;
+  border-radius: 4rem;
+  border: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transition: all 400ms ease-in-out;
+}
+
+.button:hover {
+  background-color: var(--var-accent2);
+  color: var(--var-accent3);
+}
+
+.button:active {
+  background-color: var(--var-accent2);
+  color: var(--var-accent1);
+  border: 2px solid var(--var-accent4);
 }
