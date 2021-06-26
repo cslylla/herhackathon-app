@@ -2,8 +2,6 @@
   text-align: center;
 }
 
-
-
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -18,12 +16,23 @@
   display: flex;
   justify-content: space-evenly;
   background-color: var(--var-accent-light);
-  padding: 2rem
+  padding: 2rem;
+}
+
+.mainlogo {
+  border-radius: 50%;
+  width: 60px;
+}
+
+.navbar {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--var-accent2),
+    var(--var-accent3)
+  );
 }
 
 img {
   max-width: 100%;
   width: 100px;
 }
-
-

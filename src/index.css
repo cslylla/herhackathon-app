@@ -1,12 +1,19 @@
 :root {
-  --var-bg-color:#141B38;
-  --var-accent-light:#FFC2C0;
-  --var-accent-dark:#CA5E5E;
+  --var-bg-color1: #ffebcd;
+  --var-bg-color2: #eae1fc;
+  --var-accent1: #ffbd59;
+  --var-accent2: #ff66c4;
+  --var-accent3: #5e17eb;
+  --var-accent4: #ba9cf6;
 }
 
 body {
-    background-color: var(--var-bg-color) !important;
-    font-family: 'Pacifico', cursive !important;
+  background-image: linear-gradient(
+    to bottom right,
+    var(--var-bg-color1),
+    var(--var-bg-color2)
+  ) !important;
+  font-family: "Pacifico", cursive !important;
 }
 
 a {
@@ -15,18 +22,17 @@ a {
   text-decoration: none;
 }
 
-a:hover{
+a:hover {
   color: var(--var-accent-dark) !important;
 }
 
-h2{
+h2 {
   color: var(--var-accent-dark) !important;
 }
 
-footer{
+footer {
   text-align: center;
   color: var(--var-bg-color) !important;
   background-color: var(--var-accent-light);
   padding: 2rem;
 }
-

@@ -2,15 +2,28 @@ import './App.css';
 import Logo1 from "./images/Deloitte.png"
 import Logo2 from "./images/HerHackathon.png"
 import Logo3 from "./images/TheHachathonCompany.png"
+import Logo4 from "./images/Loanbuddy.png"
 
 export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>🥑 Avo-cardios 🥑</h1>
-        <h2>How to match AI &amp; Inclusion</h2>
-        <button type="button" className="btn btn-primary">Hello</button>
-      </header>
+        <header className="App-header">
+      <nav className="navbar navbar-expand-lg navbar-dark fixed-top">
+      <a class="navbar-brand" href="index.html" title="Go to the Home page"><img src={Logo4} alt="Deloitte logo" className="mainlogo img-fluid" /></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="#">Apply</a>
+          <a class="nav-item nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
       <section>
         <div className="logos">
           <div><img src={Logo1} alt="Deloitte logo" className="logo img-fluid" /></div>
