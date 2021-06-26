@@ -9,6 +9,7 @@
 
 body {
   background-color: var(--var-accent1) !important;
+  text-align: center;
 }
 
 footer a {
@@ -28,4 +29,85 @@ footer {
   color: black !important;
   background-color: var(--var-accent-light);
   padding: 2rem;
+}
+
+.Contact h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 8rem;
+  color: var(--var-accent3);
+  font-size: 5rem;
+  text-align: center;
+}
+
+.Contact h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--var-accent4) !important;
+  text-align: center;
+}
+
+.Contact .container {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.contact-logo {
+  width: 60px;
+}
+
+.contact-symbol {
+  width: 30px;
+  margin-bottom: 2rem;
+}
+.contact-us {
+  width: 80%;
+  margin: 0 auto;
+  display: block;
+}
+
+.Contact ul {
+  list-style: none;
+  color: var(--var-accent3);
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.row {
+  margin-bottom: 1rem;
+}
+
+.button {
+  background-color: var(--var-accent3);
+  color: var(--var-accent2);
+  padding: 1rem;
+  border-radius: 4rem;
+  border: none;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  transition: all 400ms ease-in-out;
+  margin: 2rem;
+}
+
+.button:hover {
+  background-color: var(--var-accent2);
+  color: var(--var-accent3);
+}
+
+.button:active {
+  background-color: var(--var-accent2);
+  color: var(--var-accent1);
+  border: 2px solid var(--var-accent4);
+}
+
+form {
+  padding: 2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+input {
+  margin: 2rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
