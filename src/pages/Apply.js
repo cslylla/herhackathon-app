@@ -2,15 +2,30 @@ import React, {useState} from 'react';
 import '../Apply.css';
 
 export default function Apply(){
-    let [data, updateData] = useState(null);
+    let [income, setIncome] = useState("");
+    let [loan, setLoan] = useState("");
+    let [expenses, setExpenses] = useState("");
+    let [age, setAge] = useState("");
 
     function handleSubmit(event){
         event.preventDefault();
-        alert("submitted");
+        alert(`Thank you for submitting: ${income}, ${loan}, ${expenses}, ${age}`);
     }
 
-    function getData(event){
-        updateData(event.target.value);
+    function getIncome(event){
+        setIncome(event.target.value);
+    }
+
+    function getLoan(event){
+        setLoan(event.target.value);
+    }
+
+    function getExpenses(event){
+        setExpenses(event.target.value);
+    }
+
+    function getAge(event){
+        setAge(event.target.value);
     }
 
     return(
@@ -24,23 +39,23 @@ export default function Apply(){
     <div className="col-lg-2"></div>
     <div className="col-lg-5">Your monthly income in EUR</div>
     <div className="col-lg-3">
-        <input type="text" placeholder="Enter a number" autoFocus={true} autoComplete="false" onChange={getData}/>
+        <input type="text" placeholder="Enter a number" autoFocus={true} autoComplete="false" onChange={getIncome}/>
     </div>
     </div>
     <div className="row">
     <div className="col-lg-2"></div>
     <div className="col-lg-5">Required amount of loan in EUR</div>
-    <div className="col-lg-3"><input type="text" placeholder="Enter a number" autoComplete="false"/></div>
+    <div className="col-lg-3"><input type="text" placeholder="Enter a number" autoComplete="false" onChange={getLoan}/></div>
     </div>
     <div className="row">
     <div className="col-lg-2"></div>
     <div className="col-lg-5">Your monthly expenses in EUR</div>
-    <div className="col-lg-3"><input type="text" placeholder="Enter a number" autoComplete="false" /></div>
+    <div className="col-lg-3"><input type="text" placeholder="Enter a number" autoComplete="false" onChange={getExpenses}/></div>
     </div>
     <div className="row">
     <div className="col-lg-2"></div>
     <div className="col-lg-5">Your age</div>
-    <div className="col-lg-3"><input type="text" placeholder="Enter a number" autoComplete="false"/></div>
+    <div className="col-lg-3"><input type="text" placeholder="Enter a number" autoComplete="false" onChange={getAge}/></div>
     </div>
     <div className="row">
     <div className="col-lg-2"></div>
