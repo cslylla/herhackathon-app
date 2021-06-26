@@ -1,0 +1,37 @@
+.Home {
+  text-align: center;
+}
+
+.Home img {
+  max-width: 100%;
+  width: 100px;
+}
+
+.Home h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  margin-top: 8rem;
+  color: var(--var-accent3);
+  font-size: 5rem;
+}
+
+.Home h2 {
+  font-family: "Poppins", sans-serif;
+  color: var(--var-accent4) !important;
+}
+
+.Home .logos {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+}
+
+.Home .mainpicture {
+  width: 50%;
+}
+
+.Home p {
+  font-size: 2rem;
+  font-family: "Heebo", sans-serif !important;
+  margin: 5rem;
+}

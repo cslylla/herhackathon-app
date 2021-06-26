@@ -1,0 +1,11 @@
+.navbar {
+  background-color: var(--var-accent2);
+  font-size: 2rem;
+  color: white;
+  font-family: "Poppins", sans-serif !important;
+}
+
+.mainlogo {
+  border-radius: 50%;
+  width: 60px;
+}
