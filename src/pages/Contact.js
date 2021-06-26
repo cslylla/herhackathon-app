@@ -1,7 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../Contact.css';
 import insta from "../images/insta.png"
-import email from "../images/email.png"
+import emailpic from "../images/email.png"
 import linkedin from "../images/linkedin.png"
 import phone from "../images/phone.png"
 import address from "../images/address.png"
@@ -11,6 +11,17 @@ import contactus from "../images/contactus.svg"
 
 
 export default function Contact(){
+    let[email, setEmail]= useState("");
+
+    function handleSubmit(event){
+        event.preventDefault();
+    alert(`Email was sent to ${email}, please confirm your email address.`);
+    }
+
+    function updateEmail(event){
+        setEmail(event.target.value);
+    }
+
     return(
     <div className="Contact text-center">
         <h1>Contact</h1>
@@ -18,8 +29,8 @@ export default function Contact(){
         <p>For further information enter your E-mail Address below</p>
         <div className="container mt-0 mb-0">
     
-        <form>
-            <input type="email" placeholder="Enter your email address" autoFocus={true} autoComplete="false"/>
+        <form onSubmit={handleSubmit}>
+            <input type="email" placeholder="Enter your email address" autoFocus={true} autoComplete="false" onChange={updateEmail}/>
             <input type="submit" value="Sign me up" className="button"/> 
         </form> 
 
@@ -27,7 +38,7 @@ export default function Contact(){
         <div className= "container d-flex">
 
         <div className= "contact"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" title="Go to Instagram"><img src={insta} alt="Instagram logo" className="contact-logo"/></a></div>
-        <div className= "contact"><a href="mailto:info@loanbuddy.com" target="_blank" rel="noreferrer" title="Send us an email"><img src={email} alt="email logo" className="contact-logo"/></a></div>
+        <div className= "contact"><a href="mailto:info@loanbuddy.com" target="_blank" rel="noreferrer" title="Send us an email"><img src={emailpic} alt="email logo" className="contact-logo"/></a></div>
         <div className= "contact"><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" title="Send us an email"><img src={linkedin} alt="LinkedIn logo" className="contact-logo"/></a></div>
         </div>
         <div className= "container d-flex">
