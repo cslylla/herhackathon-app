@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import '../Apply.css';
-import pass from "../images/passed.png"
-import fail from "../images/failed.png"
+import passedpicture from "../images/passedpicture.png"
+import failedpicture from "../images/failedpicture.png"
 
 export default function Apply(){
     let [income, setIncome] = useState("");
@@ -33,7 +33,10 @@ export default function Apply(){
 
     let form = (
         <form onSubmit={handleSubmit}>
-        <p>Complete the form below to see if you are eligible for loan.</p>
+        <div className="row">
+        <div className="col-lg-2"></div>
+        <div className="col-lg-8"><p>Complete the form below to see if you are eligible for loan.</p></div>
+        </div>
         <div className="row">
         <div className="col-lg-2"></div>
         <div className="col-lg-5">Your monthly income in EUR</div>
@@ -72,7 +75,7 @@ export default function Apply(){
                 <h2>Stage 1: Pre-evaluation</h2>
                 <div className="message text-center mt-3">
                 <h3>Thank you for your application.</h3>
-                <img src={pass} alt="Check symbol" className="img-fluid symbol" />
+                <img src={passedpicture} alt="Check symbol" className="img-fluid symbol" />
                 <p>Your Income is {income} EUR. Your Loan is {loan} EUR. Your Expenses are {expenses} EUR. Your age is {age} years.</p>
                 <p className="passingMessage">You have passed Stage one of the evaluation process.</p>
                 <p>Continue to Stage 2 evaluation</p>
@@ -90,7 +93,7 @@ export default function Apply(){
                 <p>Complete the form below to see if you are eligible for loan.</p>
                 <div className="message text-center mt-3">
                 <h3>Thank you for your application.</h3>
-                <img src={fail} alt="Fail symbol" className="img-fluid symbol" />
+                <img src={failedpicture} alt="Fail symbol" className="img-fluid symbol" />
                 <p>Your Income is {income} EUR. Your Loan is {loan} EUR. Your Expenses are {expenses} EUR. Your age is {age} years.</p>
                 <p className="failingMessage">You have failed Stage one of the evaluation process.</p>
                 <p>For further information or support, please contact us</p>
@@ -107,7 +110,6 @@ export default function Apply(){
         <div className="container">
         <h1>Application form</h1>
         <h2>Stage 1: Pre-evaluation</h2>
-        <p>Complete the form below to see if you are eligible for loan.</p>
         {form}
         </div>    
         </div>    
