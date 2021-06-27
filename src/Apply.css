@@ -72,3 +72,21 @@ form {
   color: var(--var-accent1);
   border: 2px solid var(--var-accent4);
 }
+
+.passingMessage {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: rgb(0, 128, 0);
+}
+
+.failingMessage {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  color: #c00000;
+}
+.symbol {
+  width: 100px;
+  margin: 2rem;
+}
